@@ -1,0 +1,25 @@
+{
+  "name": "eatdaburger",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000E\u0000a\u0000t\u0000D\u0000a\u0000B\u0000u\u0000r\u0000g\u0000e\u0000r\u0000\r\u0000 \u0000",
+  "main": "sever.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Crenzio/EatDaBurger.git"
+  },
+  "author": "Jon Gilbert",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Crenzio/EatDaBurger/issues"
+  },
+  "homepage": "https://github.com/Crenzio/EatDaBurger#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "mysql": "^2.15.0"
+  }
+}
