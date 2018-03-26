@@ -1,38 +1,44 @@
-<h1>Cats!</h1>
+<h1>Let's Wolf Down Some Burgers!</h1>
 
-<h2>Cats that are not sleepy!</h2>
+<h2>Wolf! That! Burger!</h2>
 
 <ul>
-  {{#each cats}}
-    {{#unless sleepy}}
-      {{> cats/cat-block sleep=true}}
+  {{#each burgers}}
+    {{#unless devoured}}
+      {{> burger/burger-block devoured=false}}
     {{/unless}}
   {{/each}}
 </ul>
 
-<h2>Cats that are sleepy!</h2>
+<h2>Mmm... Delicious</h2>
 
 <ul>
-  {{#each cats}}
-    {{#if sleepy}}
-      {{> cats/cat-block sleep=false}}
+  {{#each burgers}}
+    {{#if devoured}}
+      {{> burgers/burger-block devoured=true}}
     {{/if}}
   {{/each}}
 </ul>
 
-<h2>Add a Cat</h2>
+<h2>What Burger Can I Get You?</h2>
+
 <form class="create-form">
 
-  <div class="form-group">
-    <label for="ca">Cat Name:</label>
-    <input type="text" id="ca" name="name">
+  <div>
+    <label for="ca">Burger Name</label>
+    <input type="text" id="ca" name="burger_name">
   </div>
 
-  <div class="form-group">
-    <label for="sleepy">Sleepy?</label><br>
-    <input type="radio" name="sleepy" value="1" checked> Sleepy!<br>
-    <input type="radio" name="sleepy" value="0"> Awake
+  <div>
+    <label for="ca">Burger Description</label>
+    <input type="text" id="ca" name="description">
   </div>
 
-  <button type="submit">Add Cat</button>
+  <div>
+    <label for="devoured">Let's Eat!</label><br>
+    <input type="radio" name="devoured" value="1"><br>
+    <input type="radio" name="devoured" value="0"> Click to Eat!
+  </div>
+
+  <button type="submit">Order Up!</button>
 </form>
