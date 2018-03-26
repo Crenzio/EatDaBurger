@@ -3,21 +3,13 @@
 <h2>Wolf! That! Burger!</h2>
 
 <ul>
-  {{#each burgers}}
-    {{#unless devoured}}
-      {{> burger/burger-block devoured=false}}
-    {{/unless}}
-  {{/each}}
+  {{#each burgers}} {{#unless devoured}} {{> burger/burger-block devoured=false}} {{/unless}} {{/each}}
 </ul>
 
 <h2>Mmm... Delicious</h2>
 
 <ul>
-  {{#each burgers}}
-    {{#if devoured}}
-      {{> burgers/burger-block devoured=true}}
-    {{/if}}
-  {{/each}}
+  {{#each burgers}} {{#if devoured}} {{> burgers/burger-block devoured=true}} {{/if}} {{/each}}
 </ul>
 
 <h2>What Burger Can I Get You?</h2>
@@ -35,8 +27,10 @@
   </div>
 
   <div>
-    <label for="devoured">Let's Eat!</label><br>
-    <input type="radio" name="devoured" value="1"><br>
+    <label for="devoured">Let's Eat!</label>
+    <br>
+    <input type="radio" name="devoured" value="1">
+    <br>
     <input type="radio" name="devoured" value="0"> Click to Eat!
   </div>
 
